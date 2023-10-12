@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+  <title>Всё лень | About</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $('<style>'+
+    '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+      'bottom:20px; left:90%; width:88px; height:125px;'+
+      'background:url(images/icons/click.png) 0 0 no-repeat; }' +
+    '.scrollTop:hover{ background-position:0 -133px;}'
+  +'</style>').appendTo('body');
+  var
+  speed = 550,
+  $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');    
+  $scrollTop.click(function(e){
+    e.preventDefault();
+    $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+  });
+
+  //появление
+  function show_scrollTop(){
+    ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+  }
+  $(window).scroll( function(){ show_scrollTop(); } );
+  show_scrollTop();
+});
+</script>
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="Всё лень logo">
+      </a>
+      <nav class="navbar-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html"> About</a>
+          </li>
+           <li>
+            <div class="dropdown">
+            <a href="menu.html" class="dropbtn"> Menu
+            <div class="dropdown-content">
+              <a href="#dish">Блюда</a>
+              <a href="#drink">Напитки</a>
+              <a href="#wine">Винная карта</a>
+            </div>
+          
+        </a></div>
+           
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero hero-sm" style="background-image: url('images/contact/hero.jpg')">
+      <div class="container">
+        <h1 class="mb-0">Меню ресторана</h1>
+      </div>
+    </section>
+
+<section class="section-padding">
+  <div class="container">
+    <section class="hero hero-menu" style="background-image: url('images/home/acva.jpg')">
+      <div class="container">
+        <h1 class="mb-0" id="dish">БЛЮДА</h1>
+      </div>
+    </section>
+   <div class="container-1">
+    <div class="position">
+    <!-- блок, который собирает фотографии в кольцо -->
+    <div class="ring">
+      <!-- блоки для изображений в карусели -->
+      <div class="img"><img src="images/menu/tit.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-1.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-2.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-3.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-4.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-5.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-6.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-7.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-8.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-9.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-10.png" alt="number"></div>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <section class="hero hero-menu" style="background-image: url('images/home/acva.jpg')">
+      <div class="container">
+        <h1 class="mb-0" id="drink">НАПИТКИ</h1>
+      </div>
+    </section>
+
+   <div class="container-1">
+    <div class="position">
+    <!-- блок, который собирает фотографии в кольцо -->
+    <div class="ring">
+      <!-- блоки для изображений в карусели -->
+      <div class="img"><img src="images/menu/page-11.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-12.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-13.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-14.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-15.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-16.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-17.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-18.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-19.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-20.png" alt="number"></div>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <section class="hero hero-menu" style="background-image: url('images/home/acva.jpg')">
+      <div class="container">
+        <h1 class="mb-0" id="wine">ВИННАЯ КАРТА</h1>
+      </div>
+    </section>
+
+   <div class="container-1">
+    <div class="position">
+    <!-- блок, который собирает фотографии в кольцо -->
+    <div class="ring">
+      <!-- блоки для изображений в карусели -->
+      <div class="img"><img src="images/menu/tit.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-21.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-22.png" alt="number"></div>
+      <div class="img"><img src="images/menu/page-23.png" alt="number"></div>
+      <div class="img"><img src="images/menu/tit-end.png" alt="number"></div>
+      
+  </div>
+</div>
+    </div>
+    
+  </div>
+</section>
+<section class="section-padding">
+ <div class="container">
+    <section class="hero hero-menu" style="background-image: url('images/home/acva.jpg')">
+      <div class="container">
+        <h1 class="mb-0">Ждем Вас отведать наше меню!</h1>
+        </div>
+      </section>
+  <!-- подключаем платформу анимации GSAP, чтобы создавать анимации сразу с параллаксом -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'></script>
+  <!-- подключаем Zepto — облегчённую библиотеку, аналог jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
+  <!-- подключаем наш основной скрипт -->
+  <script  src="script.js"></script>
+
+  </main>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+     <div class="footer-row">
+        <ul class="footer-social">
+         
+
+        <table style="margin:0 0 0 auto">
+
+        <tr><th>CONTACT</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="#">
+              <img src="images/icons/namber.jpg" alt="number"></a></td>
+              <td><p>tel:+79252064752</p></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+        <tr><td> <a href="#">
+              <img src="images/icons/email.png" alt="email"></a></td>
+              <td><p>info@vselen-vdnh.ru</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/time.png" alt="time"></a></td>
+              <td><p>Пн-Пт: с 12:00 до 21:00, Сб-Вс: с 12:00 до 22:00</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/GP.png" alt="address"></a></td>
+              <td><p>г. Москва, пр. Мира, д. 119, стр. 528</p></td>
+            </tr>
+
+        </table>
+
+<table style="margin:0 auto 0 0">
+
+        <tr><th>MENU</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="index.html">
+              <img src="images/icons/home.png" alt="home"></a></td>
+              <td> <a href="index.html">Home</a></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+       <tr><td><a href="about.html">
+              <img src="images/icons/about.png" alt="about"></a></td>
+              <td> <a href="about.html">About</a></td>
+            </tr>
+
+        <tr><td><a href="menu.html">
+              <img src="images/icons/menu.png" alt="home"></a></td>
+              <td> <a href="menu.html">Menu</a></td>
+            </tr>
+
+        <tr><td><a href="contact.html">
+              <img src="images/icons/contact.png" alt="contact"></a></td>
+              <td> <a href="contact.html">Contact</a></td>
+            </tr>
+
+            
+          
+        </table>
+
+        </ul>
+
+         <small class="footer-copyright">© КАФЕ-РЕСТОРАН «ВСЁ ЛЕНЬ» 2023. Все права защищены.</small>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

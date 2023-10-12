@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+  <title>Всё лень | Home</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+<script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $('<style>'+
+    '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+      'bottom:20px; left:90%; width:88px; height:125px;'+
+      'background:url(images/icons/click.png) 0 0 no-repeat; }' +
+    '.scrollTop:hover{ background-position:0 -133px;}'
+  +'</style>').appendTo('body');
+  var
+  speed = 550,
+  $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');    
+  $scrollTop.click(function(e){
+    e.preventDefault();
+    $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+  });
+
+  //появление
+  function show_scrollTop(){
+    ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+  }
+  $(window).scroll( function(){ show_scrollTop(); } );
+  show_scrollTop();
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="Всё лень logo">
+      </a>
+      <nav class="navbar-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <div class="dropdown">
+            <a href="menu.html" class="dropbtn"> Menu
+            <div class="dropdown-content">
+              <a href="menu.html#dish">Блюда</a>
+              <a href="menu.html#drink">Напитки</a>
+              <a href="menu.html#wine">Винная карта</a>
+            </div>
+          
+        </a></div>
+           
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/home/hero.jpg')">
+      <div class="container">
+        <h1>Кафе-ресторан - "Всё лень"</h1>
+        <p>это особенное место с изумительным сервисом, авторской кухней и банкетами
+      </div>
+    </section>
+
+
+    <!-- Services Section -->
+
+     <section class="section-padding">
+      <div class="container">
+        <div class="services">
+
+          <div class="service-new">
+            <div class="service1">
+              <h4>Новости!
+              <p>Требуются сотрудники в наш ресторан с дружным коллективом! По всем вопросам писать по номеру +79252064752! </p>
+              <p>С нетерпением ждем вас! </p></h4>
+              <a href="https://hh.ru/employer/6104051?hhtmFrom=vacancy">Learn More</a>
+            </div>
+          </div>
+
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="services">
+
+          <div class="service-col">
+            <div class="service">
+              <img src="images/icons/forest.png" alt="лес">
+              <h4>Благоприятное природное окружение</h4>
+              <p>Экологически чистое место в красивейшем парке вдали от городской суеты</p>
+              <a href="about.html">Learn More</a>
+            </div>
+          </div>
+
+          <div class="service-col">
+            <div class="service">
+              <img src="images/icons/PW.jpg" alt="панорамные окна">
+              <h4>Великолепные панорамные окна</h4>
+              <p>Прекрасные обзоры и восхитительные виды доставят эстетическое удовольствие</p>
+              <a href="about.html">Learn More</a>
+            </div>
+          </div>
+
+           <div class="service-col">
+            <div class="service">
+              <img src="images/icons/individual.jpg" alt="индивидульный подход">
+              <h4>Индивидуальный подход</h4>
+              <p>Возможность выбора технологии приготовления – жар, пар, мангал или хоспер</p>
+              <a href="menu.html">Learn More</a>
+            </div>
+          </div>
+
+          <div class="service-col">
+            <div class="service">
+              <img src="images/icons/pond.jpg" alt="пруд с лебедями">
+              <h4>Живописный пруд с лебедями</h4>
+              <p>Стильный эко-ресторан на природе у воды с изумительными пейзажами</p>
+              <a href="about.html">Learn More</a>
+            </div>
+          </div>
+
+           <div class="service-col">
+            <div class="service">
+              <img src="images/icons/kitchen.jpg" alt="авторская кухня">
+              <h4>Авторская кухня с "фишками"</h4>
+              <p>Уникальное использование продуктов, фирменная подача и оригинальные соусы</p>
+              <a href="menu.html">Learn More</a>
+            </div>
+          </div>
+
+           <div class="service-col">
+            <div class="service">
+              <img src="images/icons/WD.jpg" alt="согревающие напитки">
+              <h4>Ароматные согревающие напитки</h4>
+              <p>Травяные и листовые чаи в ассортименте с комплиментом в виде медовых сот</p>
+              <a href="menu.html">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Section -->
+    <section class="section-padding section-green">
+      <div class="container">
+        <div class="split-section">
+          <div class="split-section__text">
+
+            <h1>БАНКЕТЫ</h1>
+            <h2>Добро пожаловать в самый душевный ресторан «Все Лень»!</h2>
+            <p>Ресторан «Все Лень» – идеальное место для банкета по различным поводам. Мы с радостью организуем званое торжество, которое впечатлит и запомнится надолго.</p>
+<p>Наши основные условия:</p>
+<ul>
+<li>с удовольствием принимаем заказы на проведение банкетов;</li>
+<li>ресторанный зал полностью закрывают для посетителей – при посадке от 20 человек;</li>
+<li>эксклюзивный подход – все условия обсуждаются в индивидуальном порядке.</li>
+</ul>
+<p>Мы организуем всё – пикник, юбилей, корпоратив, тематическую вечеринку, камерную свадьбу и многое другое.</p>
+<p>Гостеприимно открывая свои двери для неспешных прохожих, здесь угощают домашними блюдами с авторскими нотками.</p>
+<p>Стильный эко-интерьер подчеркивают неподдельную красоту природы, которая окружает со всех сторон.</p>
+<p>Позвольте на время забыть о шуме большого города и подарить себе пару чудесных мгновений.</p>
+<blockquote><p>Наше кредо заключается в том, что совершенству нет предела. Всегда внимательно прислушиваемся ко всем замечаниям и пожеланиям гостей. Из малых достижений – складывается большая победа. Мы умеем угождать и побеждать!</p>
+            <a href="contact.html">Learn More</a>
+          </div>
+          <div class="split-section__image">
+            <img src="images/home/banquet.jpeg" alt="банкет" class="img-shadow img-rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+   <footer>
+    <div class="container">
+     <div class="footer-row">
+        <ul class="footer-social">
+         
+
+        <table style="margin:0 0 0 auto">
+
+        <tr><th>CONTACT</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="#">
+              <img src="images/icons/namber.jpg" alt="number"></a></td>
+              <td><p>tel:+79252064752</p></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+        <tr><td> <a href="#">
+              <img src="images/icons/email.png" alt="email"></a></td>
+              <td><p>info@vselen-vdnh.ru</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/time.png" alt="time"></a></td>
+              <td><p>Пн-Пт: с 12:00 до 21:00, Сб-Вс: с 12:00 до 22:00</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/GP.png" alt="address"></a></td>
+              <td><p>г. Москва, пр. Мира, д. 119, стр. 528</p></td>
+            </tr>
+
+        </table>
+
+<table style="margin:0 auto 0 0">
+
+        <tr><th>MENU</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="index.html">
+              <img src="images/icons/home.png" alt="home"></a></td>
+              <td> <a href="index.html">Home</a></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+       <tr><td><a href="about.html">
+              <img src="images/icons/about.png" alt="about"></a></td>
+              <td> <a href="about.html">About</a></td>
+            </tr>
+
+        <tr><td><a href="menu.html">
+              <img src="images/icons/menu.png" alt="home"></a></td>
+              <td> <a href="menu.html">Menu</a></td>
+            </tr>
+
+        <tr><td><a href="contact.html">
+              <img src="images/icons/contact.png" alt="contact"></a></td>
+              <td> <a href="contact.html">Contact</a></td>
+            </tr>
+
+            
+          
+        </table>
+
+        </ul>
+
+         <small class="footer-copyright">© КАФЕ-РЕСТОРАН «ВСЁ ЛЕНЬ» 2023. Все права защищены.</small>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
+
+
+
+</body>
+</html>

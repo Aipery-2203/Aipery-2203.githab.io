@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+  <title>Всё лень | contact</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $('<style>'+
+    '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+      'bottom:20px; left:90%; width:88px; height:125px;'+
+      'background:url(images/icons/click.png) 0 0 no-repeat; }' +
+    '.scrollTop:hover{ background-position:0 -133px;}'
+  +'</style>').appendTo('body');
+  var
+  speed = 550,
+  $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');    
+  $scrollTop.click(function(e){
+    e.preventDefault();
+    $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+  });
+
+  //появление
+  function show_scrollTop(){
+    ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+  }
+  $(window).scroll( function(){ show_scrollTop(); } );
+  show_scrollTop();
+});
+</script>
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="Всё лень logo">
+      </a>
+      <nav class="navbar-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <div class="dropdown">
+            <a href="menu.html" class="dropbtn"> Menu
+            <div class="dropdown-content">
+              <a href="menu.html#dish">Блюда</a>
+              <a href="menu.html#drink">Напитки</a>
+              <a href="menu.html#wine">Винная карта</a>
+            </div>
+          
+        </a></div>
+           
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero hero-sm" style="background-image: url('images/contact/hero.jpg')">
+      <div class="container">
+        <h1 class="mb-0">Обратная связь</h1>
+      </div>
+    </section>
+
+    <!-- Form and text -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-form">
+          <div class="contact-form__form">
+
+
+            <form action="send-form.php" method="post" class="form-layout">
+              <div class="form-col-50">
+                <label for="contact-name">Your Name</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+              </div>
+              <div class="form-col-50">
+                <label for="contact-email">Your Email</label>
+                <input type="text" class="form-control" name="email" id="email" required>
+              </div>
+              <div class="form-col-50">
+                <label for="contact-email">Your number</label>
+                <input type="number" class="form-control" name="nubmer" id="number" required>
+              </div>
+              <div class="form-col">
+                <label for="contact-message">Your Message</label>
+                <textarea class="form-control"
+                          name="message"
+                          id="-message"
+                          rows="4 required"></textarea>
+              </div>
+              <div class="form-col">
+                <button formnovalidate class="btn btn-primary" type="submit">
+                  Send
+                </button>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="contact-form__info">
+            <p class="lead">Email: <a href="mailto:webdev@gmail.com">info@vselen-vdnh.ru</a></p>
+            <p class="lead">Phone: <a href="tel:+9222323322">+7(925)206-47-52</a></p>
+            <br>
+            <p class="lead">По любым возникшим вопросам вы можете обратиться по указаному номеру и адресу почты или заполнить обращение.</p>
+            <p class="lead">Наша администрация ответит вам в рабочие часы.</p>
+            <h4>Важное примечание: уважаемые гости, наш ресторан не принимает брони на выходные и праздничные дни! Рассадка производится по факту. На оставшиеся вопросы Вам ответят наши сотрудники в рабочие часы</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+   <footer>
+    <div class="container">
+     <div class="footer-row">
+        <ul class="footer-social">
+         
+
+        <table style="margin:0 0 0 auto">
+
+        <tr><th>CONTACT</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="#">
+              <img src="images/icons/namber.jpg" alt="number"></a></td>
+              <td><p>tel:+79252064752</p></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+        <tr><td> <a href="#">
+              <img src="images/icons/email.png" alt="email"></a></td>
+              <td><p>info@vselen-vdnh.ru</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/time.png" alt="time"></a></td>
+              <td><p>Пн-Пт: с 12:00 до 21:00, Сб-Вс: с 12:00 до 22:00</p></td>
+            </tr>
+
+        <tr><td><a href="https://yandex.ru/maps/org/vse_len/82562847446/?from=tabbar&ll=37.614875%2C55.836107&mode=search&sll=37.614875%2C55.836107&source=serp_navig&text=%D0%B2%D1%81%D0%B5%20%D0%BB%D0%B5%D0%BD%D1%8C%20%D0%B2%D0%B4%D0%BD%D1%85%20%D0%BA%D0%B0%D1%84%D0%B5%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD&z=15">
+              <img src="images/icons/GP.png" alt="address"></a></td>
+              <td><p>г. Москва, пр. Мира, д. 119, стр. 528</p></td>
+            </tr>
+
+        </table>
+
+<table style="margin:0 auto 0 0">
+
+        <tr><th>MENU</th></tr> <!--ряд с ячейками заголовков-->
+
+        <tr><td><a href="index.html">
+              <img src="images/icons/home.png" alt="home"></a></td>
+              <td> <a href="index.html">Home</a></td>
+            </tr> <!--ряд с ячейками тела таблицы-->
+
+       <tr><td><a href="about.html">
+              <img src="images/icons/about.png" alt="about"></a></td>
+              <td> <a href="about.html">About</a></td>
+            </tr>
+
+        <tr><td><a href="menu.html">
+              <img src="images/icons/menu.png" alt="home"></a></td>
+              <td> <a href="menu.html">Menu</a></td>
+            </tr>
+
+        <tr><td><a href="contact.html">
+              <img src="images/icons/contact.png" alt="contact"></a></td>
+              <td> <a href="contact.html">Contact</a></td>
+            </tr>
+
+            
+          
+        </table>
+
+        </ul>
+
+         <small class="footer-copyright">© КАФЕ-РЕСТОРАН «ВСЁ ЛЕНЬ» 2023. Все права защищены.</small>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
